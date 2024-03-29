@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+.site-footer {
+    background-color: #965947; /* Um tom de marrom claro */
+    color: #fff; /* Texto branco para melhor contraste */
+    text-align: center; /* Centraliza o texto */
+    border-top: 1px solid #e7e7e7; /* Uma borda superior clara para delimitação */
+    box-sizing: border-box; /* Garante que a borda e o padding sejam incluídos na largura total */
+    bottom: 0px;
+}
+
+.site-footer p {
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    margin: 10px 0; /* Margem superior e inferior para um pouco de espaçamento */
+    font-family: 'Tangerine', cursive; /* Aplica a fonte 'Tangerine' */
+}

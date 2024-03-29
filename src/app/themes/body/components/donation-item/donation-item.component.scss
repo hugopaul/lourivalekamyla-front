@@ -1,0 +1,48 @@
+.donation-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px; /* Ajuste conforme necessário para o tamanho do item */
+    margin: 20px auto; /* Centraliza e adiciona espaço ao redor de cada item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+    border-radius: 25px; /* Borda arredondada para o contêiner */
+    overflow: hidden; /* Garante que tudo fique contido dentro das bordas arredondadas */
+    background-color: #fff; /* Fundo claro para os itens */
+}
+
+.donation-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem cubra o espaço disponível */
+}
+
+.donation-description {
+    padding: 15px; /* Espaçamento interno para separar conteúdo das bordas */
+    display: flex;
+    flex-direction: column; /* Organiza os filhos em coluna */
+}
+
+.donation-description-group {
+    margin-bottom: 15px; /* Espaço entre a descrição e o botão */
+}
+
+.donation-description-p {
+    margin: 5px 0; /* Espaçamento vertical para separar os parágrafos */
+    color: #333; /* Cor de texto mais escura para contraste */
+    font-size: 16px; /* Tamanho da fonte ajustável conforme necessário */
+}
+
+.donation-description-button {
+    background-color: #965947; /* Cor de fundo para o botão */
+    color: #fff; /* Cor do texto no botão */
+    padding: 10px 20px; /* Espaçamento interno para o botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 20px; /* Borda arredondada para o botão */
+    cursor: pointer; /* Muda o cursor para indicar clicabilidade */
+    font-weight: bold; /* Texto em negrito para destacar */
+    transition: background-color 0.3s; /* Animação suave ao mudar o estado */
+}
+
+.donation-description-button:hover {
+    background-color: #b76e79; /* Escurece o botão ao passar o mouse */
+}

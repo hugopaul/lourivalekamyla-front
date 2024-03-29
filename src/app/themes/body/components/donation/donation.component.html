@@ -1,0 +1,13 @@
+<div class="donation">
+    <h1 class="donation-h1">LISTA DE PRESENTES</h1>
+    <p class="donation-p">Nossa jornada juntos está apenas começando, e enquanto planejamos o dia em que uniremos nossas vidas, ficaríamos honrados em ter vocês ao nosso lado, celebrando cada momento. 
+        Sabemos que a presença de cada um de vocês já é um presente inestimável.  
+        Agradecemos de coração por fazerem parte da nossa história.</p>
+    <div class="donation-itens">
+        @for (item of items; track $index) {
+            <app-donation-item class="item-donation" [item]="item"/>
+        }
+    </div>
+    <a href="/ecommerce"><button class="donation-button"> Ver Mais! </button></a>
+    <br>
+</div>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 26px;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner-title {
+    position: absolute;
+    top: 30%; /* Ajustado para ficar um pouco acima do meio */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #fff;
+    font-family: 'Tangerine', cursive;
+    font-size: 4vw;
+    text-align: center;
+    z-index: 2;
+}
+
+.banner-timer {
+    position: absolute;
+    top: 70%; /* Ajustado para ficar um pouco abaixo do meio */
+    left: 50%;
+    transform: translate(-50%, -10%); /* Leve ajuste para garantir separação visual do título */
+    margin: 0px;
+    color: #fff;
+    font-family: 'Arial', sans-serif; /* Mudança para uma fonte mais legível para as informações do timer */
+    font-size: 2vw; /* Ajuste para garantir legibilidade */
+    text-align: center;
+    z-index: 2;
+    p{
+        font-size: 16px;
+        margin: 0px;
+
+    }
+   
+}
+
+.banner-timer-h5{
+    font-family: 'Tangerine', cursive;
+    margin: 5px;
+}

@@ -1,0 +1,34 @@
+
+.header-div-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
+
+.header-ul-desktop {
+    display: flex; /* Isso fará com que os itens da lista fiquem lado a lado */
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    justify-content: center;
+}
+
+.header-ul-desktop li {
+    margin: 10px; /* Adiciona espaço entre os itens da lista */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #965947;
+}
+
+.header-ul-desktop a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Usa a cor de texto atual do elemento pai */
+}
+
+.header-ul-desktop a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+}
