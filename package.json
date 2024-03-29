@@ -1,13 +1,13 @@
 {
-  "name": "casament-lorival",
+  "name": "lourivalekamyla",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --serve-path /lourivalekamyla",
+    "build": "ng build --base-href /lourivalekamyla",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:casament-lorival": "node dist/casament-lorival/server/server.mjs"
+    "serve:ssr:lourivalekamyla": "node dist/lourivalekamyla/server/server.mjs"
   },
   "private": true,
   "dependencies": {
