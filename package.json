@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --serve-path /lourivalekamyla",
-    "build": "ng build --base-href /lourivalekamyla",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:lourivalekamyla": "node dist/lourivalekamyla/server/server.mjs"
