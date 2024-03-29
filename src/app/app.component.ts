@@ -17,5 +17,5 @@ import { EcommerceComponent } from './themes/ecommerce/ecommerce.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'casament-lorival';
+  title = 'lourivalekamyla';
 }
