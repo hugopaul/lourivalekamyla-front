@@ -6,10 +6,9 @@ import { CountdownTimerComponent } from '../countdown-timer/countdown-timer.comp
   standalone: true,
   imports: [CountdownTimerComponent],
   templateUrl: './banner.component.html',
-  styleUrl: './banner.component.scss'
+  styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent {
-  myTargetDate = '2023-12-31T23:59:59';
-  basePath:string = '../../../../../assets/img/';
-
+  myTargetDate = '2024-12-20T00:00:00';
+  basePath: string = '../../../../../assets';
 }

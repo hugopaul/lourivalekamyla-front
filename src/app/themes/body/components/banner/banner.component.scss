@@ -3,16 +3,16 @@
 .banner {
     position: relative;
     width: 100%;
-    max-width: 100%;
-    display: block;
+    height: 100vh; /* Define a altura do banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     margin-bottom: 26px;
-}
-
-.banner-img {
-    width: 100%;
-    height: auto;
-    display: block;
+    background-image: url('../../../../../assets/fotos/foto3.jpg');
+    background-size: cover; /* Garante que a imagem cubra todo o banner */
+    background-position-x: 50%;
+    background-position-y: 40%;
 }
 
 .banner::before {
@@ -20,45 +20,93 @@
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade aqui */
     z-index: 1;
 }
 
-.banner-title {
-    position: absolute;
-    top: 30%; /* Ajustado para ficar um pouco acima do meio */
-    left: 50%;
-    transform: translate(-50%, -50%);
+.banner-content {
+    z-index: 2;
+    color: #fff;
+}
+
+.banner-title h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 8vw !important; /* Aumentado o tamanho da fonte */
+}
+
+.banner-title p, .banner-title h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.banner-timer-h5 {
+    font-family: 'Tangerine', cursive;
+    font-size: 2.5rem;
+}
+
+.countdown-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adicionado espaço acima do cronômetro */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.countdown-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; /* Espaça uniformemente as colunas */
+}
+
+.countdown-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-ul-desktop {
+    list-style: none;
+    padding: 0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
     color: #fff;
-    font-family: 'Tangerine', cursive;
-    font-size: 4vw;
     text-align: center;
-    z-index: 2;
 }
 
-.banner-timer {
-    position: absolute;
-    top: 70%; /* Ajustado para ficar um pouco abaixo do meio */
-    left: 50%;
-    transform: translate(-50%, -10%); /* Leve ajuste para garantir separação visual do título */
-    margin: 0px;
-    color: #fff;
-    font-family: 'Arial', sans-serif; /* Mudança para uma fonte mais legível para as informações do timer */
-    font-size: 2vw; /* Ajuste para garantir legibilidade */
-    text-align: center;
-    z-index: 2;
-    p{
-        font-size: 16px;
-        margin: 0px;
+.countdown-ul-desktop li {
+    margin: 2px 0;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+@media (max-width: 768px) {
+
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Define a altura do banner */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 26px;
+        background-image: url('../../../../../assets/fotos/foto1.jpg');
+        background-size: cover; /* Garante que a imagem cubra todo o banner */
+        background-position: center; /* Centraliza a imagem */
     }
-   
-}
 
-.banner-timer-h5{
-    font-family: 'Tangerine', cursive;
-    margin: 5px;
+    .banner-title h1 {
+        font-size: 18vw !important; /* Aumenta o tamanho da fonte no mobile */
+    }
+    .countdown-ul-desktop li {
+        font-size: 16px; /* Ajuste da fonte para melhor visualização em telas menores */
+    }
 }

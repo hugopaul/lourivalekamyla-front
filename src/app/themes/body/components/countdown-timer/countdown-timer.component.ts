@@ -3,9 +3,8 @@ import { AfterViewInit, Component, ElementRef, Input, NgZone, OnInit, ViewChild 
 @Component({
   selector: 'app-countdown-timer',
   standalone: true,
-  imports: [],
   templateUrl: './countdown-timer.component.html',
-  styleUrl: './countdown-timer.component.scss'
+  styleUrls: ['./countdown-timer.component.scss']
 })
 export class CountdownTimerComponent implements OnInit {
 
@@ -15,25 +14,13 @@ export class CountdownTimerComponent implements OnInit {
     this.initTimer()
   }
 
-
   date: any;
   now: any;
-  targetDate: any = new Date('2024-12-31T23:59:59');
+  targetDate: any = new Date('2024-12-20T00:00:00');
   targetTime: any = this.targetDate.getTime();
   difference!: number;
   months: Array<string> = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
+    'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
   ];
   currentTime: any = `${
     this.months[this.targetDate.getMonth()]
@@ -47,23 +34,22 @@ export class CountdownTimerComponent implements OnInit {
   initTimer() {
     this.ngZone.runOutsideAngular(() => {
       setInterval(() => {
-      this.tickTock();
-      this.difference = this.targetTime - this.now;
-      this.difference = this.difference / (1000 * 60 * 60 * 24);
-      !isNaN(this.days.nativeElement.innerText)
-        ? (this.days.nativeElement.innerText = Math.floor(this.difference))
-        : (this.days.nativeElement.innerHTML = `...`);
-    }, 1000);
+        this.tickTock();
+        this.difference = this.targetTime - this.now;
+        this.difference = this.difference / (1000 * 60 * 60 * 24);
+        !isNaN(this.days.nativeElement.innerText)
+          ? (this.days.nativeElement.innerText = Math.floor(this.difference))
+          : (this.days.nativeElement.innerHTML = `...`);
+      }, 1000);
     });
-     
   }
 
   tickTock() {
-      this.date = new Date();
-      this.now = this.date.getTime();
-      this.days.nativeElement.innerText = Math.floor(this.difference);
-      this.hours.nativeElement.innerText = 23 - this.date.getHours();
-      this.minutes.nativeElement.innerText = 60 - this.date.getMinutes();
-      this.seconds.nativeElement.innerText = 60 - this.date.getSeconds();
+    this.date = new Date();
+    this.now = this.date.getTime();
+    this.days.nativeElement.innerText = Math.floor(this.difference);
+    this.hours.nativeElement.innerText = 23 - this.date.getHours();
+    this.minutes.nativeElement.innerText = 60 - this.date.getMinutes();
+    this.seconds.nativeElement.innerText = 60 - this.date.getSeconds();
   }
 }
