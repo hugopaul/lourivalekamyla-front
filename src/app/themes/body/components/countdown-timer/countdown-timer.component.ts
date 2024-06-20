@@ -11,7 +11,8 @@ export class CountdownTimerComponent implements OnInit {
   constructor(private ngZone: NgZone) {}
 
   ngOnInit(): void {
-    this.initTimer()
+    this.initializeElements();
+    this.initTimer();
   }
 
   date: any;
@@ -30,6 +31,13 @@ export class CountdownTimerComponent implements OnInit {
   @ViewChild('hours', { static: true }) hours!: ElementRef;
   @ViewChild('minutes', { static: true }) minutes!: ElementRef;
   @ViewChild('seconds', { static: true }) seconds!: ElementRef;
+
+  initializeElements() {
+    this.days.nativeElement.innerText = '0';
+    this.hours.nativeElement.innerText = '0';
+    this.minutes.nativeElement.innerText = '0';
+    this.seconds.nativeElement.innerText = '0';
+  }
 
   initTimer() {
     this.ngZone.runOutsideAngular(() => {

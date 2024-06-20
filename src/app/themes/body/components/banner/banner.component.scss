@@ -8,7 +8,6 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-bottom: 26px;
     background-image: url('../../../../../assets/fotos/foto3.jpg');
     background-size: cover; /* Garante que a imagem cubra todo o banner */
     background-position-x: 50%;
@@ -32,14 +31,13 @@
 }
 
 .banner-title h1 {
-    font-family: 'Tangerine', cursive;
+    font-family: "Hurricane", cursive !important;
     font-size: 8vw !important; /* Aumentado o tamanho da fonte */
 }
 
 .banner-title p, .banner-title h2 {
     font-family: 'Arial', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
 }
 
 .banner-timer-h5 {

@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FAEFEA; /* Cor de fundo do container */
+    padding: 0; /* Remove o padding */
+    border: none; /* Remove a borda */
+    margin: 0;
+    max-width: 100%;
+}
+
 .div-introduction {
+    background: #FAEFEA;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: auto;
     max-width: 900px;
     position: relative; /* Necessário para posicionar o pseudo-elemento */
-    border-top:1px  solid #965947;
+    border-top: 1px solid #965947;
 }
-
-
 
 .introduction-h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -32,7 +41,7 @@
     max-width: 600px;
     height: auto;
     border-radius: 35%; /* Torna a imagem circular */
-    box-shadow: 0 0 0 30px #FAEFEA; /* Ajuste a cor para corresponder ao fundo da sua tela */
+    box-shadow: 0 0 0 10px #FAEFEA; /* Ajuste a cor para corresponder ao fundo da sua tela */
     margin-top: 20px; /* Espaçamento acima da imagem */
     margin-bottom: 20px; /* Espaçamento abaixo da imagem */
 }

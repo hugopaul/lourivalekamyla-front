@@ -1,3 +1,7 @@
+.navbar-light.custom-bg {
+  background-color: #FAEFEA;
+}
+
 .navbar-nav .nav-item .nav-link {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px; /* Tamanho da fonte */
@@ -9,8 +13,17 @@
   text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
 }
 
+.display-1 {
+  font-family: "Hurricane", cursive !important;
+  font-size: 2.5vw;
+}
+
 @media (max-width: 768px) {
   .navbar-collapse {
     text-align: right; /* Alinha o menu à direita em dispositivos móveis */
+  }
+  .display-1 {
+    font-family: "Tangerine", cursive;
+    font-size: 7vw;
   }
 }

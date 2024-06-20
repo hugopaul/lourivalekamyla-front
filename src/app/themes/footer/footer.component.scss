@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
-.site-footer {
-    background-color: #965947; /* Um tom de marrom claro */
+.custom-footer {
+    background-color: #FAEFEA; /* Cor de fundo personalizada */
     color: #fff; /* Texto branco para melhor contraste */
     text-align: center; /* Centraliza o texto */
     border-top: 1px solid #e7e7e7; /* Uma borda superior clara para delimitação */
@@ -9,9 +9,33 @@
     bottom: 0px;
 }
 
-.site-footer p {
-    color: white; /* Cor do texto */
-    font-size: 24px; /* Tamanho da fonte */
+.custom-footer-inner {
+    color: #965947; /* Cor do texto */
     margin: 10px 0; /* Margem superior e inferior para um pouco de espaçamento */
-    font-family: 'Tangerine', cursive; /* Aplica a fonte 'Tangerine' */
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  color: #965947;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+}
+
+.display-1 {
+  font-family: "Tangerine", cursive;
+  font-size: 2.5vw;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    text-align: right; /* Alinha o menu à direita em dispositivos móveis */
+  }
+  .display-1 {
+    font-family: "Tangerine", cursive;
+    font-size: 7vw;
+  }
 }

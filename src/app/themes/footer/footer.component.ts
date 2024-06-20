@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+
+  email:string = "email@email.com";
 }
