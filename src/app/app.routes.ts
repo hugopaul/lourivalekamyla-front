@@ -3,5 +3,5 @@ import { AppComponent } from './app.component';
 import { BodyComponent } from './themes/body/body.component';
 
 export const routes: Routes = [
-    { path: 'lourivalekamyla', component: BodyComponent }
+    { path: '', component: BodyComponent }
 ];
