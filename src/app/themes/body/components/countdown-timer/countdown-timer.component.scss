@@ -1,7 +1,6 @@
 .countdown-div {
     display: flex;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: auto;
     padding: 20px; /* Adicionando padding para espaço interno */
 }
@@ -35,7 +34,6 @@
     font-weight: bold;
     font-size: 16px; /* Tamanho da fonte maior para destacar os números */
     width: 100%; /* Garante que cada LI ocupe toda a largura do contêiner */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
