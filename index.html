@@ -13,7 +13,8 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -29,8 +30,8 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="font-secondary text-white mb-n2">Kamyla <span class="text-primary">&</span> Lourival</h1>
+        <a href="index.html" class="navbar-brand d-block d-lg-none nav-item">
+            <img class="position-absolute" src="img/Brasao.png" style="height: 75px;width: 75px;left: 0px;top: 0px;right: 0px;bottom: 0px;">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -38,18 +39,21 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#story" class="nav-item nav-link">Story</a>
-                <a href="#gallery" class="nav-item nav-link">Gallery</a>
-            </div>
-            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
-                <h1 class="font-secondary text-white mb-n2">Kamyla <span class="text-primary">&</span> Lourival</h1>
-            </a>
-            <div class="navbar-nav mr-auto py-0">
-                <a href="#family" class="nav-item nav-link">Family</a>
+                <a href="#about" class="nav-item nav-link">Sobre Nós</a>
+                <a href="#story" class="nav-item nav-link">Nossa História</a>
+                <a href="#gallery" class="nav-item nav-link">Galeria</a>
                 <a href="#event" class="nav-item nav-link">Event</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block"><img src="img/Brasao.png" class="nav-item" style="height: 75px; width: 75px;"></a>
             </div>
+            <!--<a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Kamyla <span class="text-primary">&</span> Lourival</h1>
+            </a>-->
+            <div class="navbar-brand mx-5 d-none d-lg-block">
+               
+            </div>
+            <!--<div class="navbar-nav mr-auto py-0">
+              
+            </div>-->
         </div>
     </nav>
     <!-- Navbar End -->
@@ -64,8 +68,30 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Kamyla & Lourival</h1>
-                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
+                            <div class="d-inline-block">
+                                <!-- Adicionando o countdown time -->
+                                <div class="countdown-div mt-4">
+                                    <div class="countdown-container">
+                                        <table class="table countdown-table text-center text-white">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Dias</th>
+                                                    <th scope="col">Horas</th>
+                                                    <th scope="col">Minutos</th>
+                                                    <th scope="col">Segundos</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="days">0</td>
+                                                    <td class="hours">0</td>
+                                                    <td class="minutes">0</td>
+                                                    <td class="seconds">0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                             <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
@@ -79,8 +105,30 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Kamyla & Lourival</h1>
-                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
+                            <div class="d-inline-block">
+                                <!-- Adicionando o countdown time -->
+                                <div class="countdown-div mt-4">
+                                    <div class="countdown-container">
+                                        <table class="table countdown-table text-center text-white">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Dias</th>
+                                                    <th scope="col">Horas</th>
+                                                    <th scope="col">Minutos</th>
+                                                    <th scope="col">Segundos</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="days">0</td>
+                                                    <td class="hours">0</td>
+                                                    <td class="minutes">0</td>
+                                                    <td class="seconds">0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                             <!--<button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
@@ -106,16 +154,18 @@
 
 
     <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
-                    </button>        
+                    </button>
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                            allow="autoplay"></iframe>
                     </div>
                 </div>
             </div>
@@ -136,10 +186,14 @@
                 <div class="col-md-6 p-0 text-center text-md-right">
                     <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
                         <h3 class="mb-3">O Noivo</h3>
-                        <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Lourival</h3>
+                        <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos
+                            tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet
+                            est dolor elitr.</p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i
+                                class="fa fa-male text-primary pr-3"></i>Lourival</h3>
                         <div class="position-relative">
-                            <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/lourivalima/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-primary btn-square"
+                                href="https://www.instagram.com/lourivalima/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -154,10 +208,14 @@
                 <div class="col-md-6 p-0 text-center text-md-left">
                     <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
                         <h3 class="mb-3">A Noiva</h3>
-                        <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Kamyla</h3>
+                        <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos
+                            tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet
+                            est dolor elitr.</p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i
+                                class="fa fa-female text-primary pr-3"></i>Kamyla</h3>
                         <div class="position-relative">
-                            <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/kamylarezendee/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-primary btn-square"
+                                href="https://www.instagram.com/kamylarezendee/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +242,9 @@
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">Primeiro Encontro</h4>
                             <p class="text-uppercase mb-2">27 Dez 2020</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at
+                                amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd
+                                clita kasd stet amet est dolor elitr.</p>
                         </div>
                     </div>
                 </div>
@@ -193,7 +253,9 @@
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
                             <h4 class="mb-2">Início de Namoro</h4>
                             <p class="text-uppercase mb-2">27 Dez 2021</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at
+                                amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd
+                                clita kasd stet amet est dolor elitr.</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
@@ -208,7 +270,9 @@
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">Proposta de Casamento</h4>
                             <p class="text-uppercase mb-2">26 Jan 2024</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at
+                                amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd
+                                clita kasd stet amet est dolor elitr.</p>
                         </div>
                     </div>
                 </div>
@@ -217,7 +281,9 @@
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
                             <h4 class="mb-2">Chá de Panela</h4>
                             <p class="text-uppercase mb-2">20 Jul 2024</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at
+                                amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd
+                                clita kasd stet amet est dolor elitr.</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
@@ -289,7 +355,9 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Clita ipsum aliquyam dolor diam dolores elitr nonumy. Rebum sea vero ipsum eirmod tempor kasd. Diam amet lorem erat eos sit lorem elitr justo</h5>
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Clita ipsum aliquyam dolor diam dolores elitr
+                        nonumy. Rebum sea vero ipsum eirmod tempor kasd. Diam amet lorem erat eos sit lorem elitr justo
+                    </h5>
                 </div>
             </div>
             <div class="row">
@@ -490,8 +558,10 @@
             </div>
             <div class="d-flex justify-content-center mb-4">
                 <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i
+                        class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="d-flex justify-content-center py-2">
@@ -499,7 +569,8 @@
                 <span class="px-3">|</span>
                 <p class="text-white" href="#">+012 345 6789</p>
             </div>
-            <p class="m-0">&copy; <a class="text-primary" href="#">Domain Name</a>. Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a>
+            <p class="m-0">&copy; <a class="text-primary" href="#">Domain Name</a>. Designed by <a class="text-primary"
+                    href="https://htmlcodex.com">HTML Codex</a>
             </p>
         </div>
     </div>
@@ -510,7 +581,8 @@
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i
+            class="fa fa-angle-double-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -521,7 +593,46 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script>
+        const targetDate = new Date('2024-12-20T00:00:00').getTime();
 
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            // Cálculo de tempo restante em dias, horas, minutos e segundos
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            // Atualiza todos os elementos com a classe correspondente
+            document.querySelectorAll('.days').forEach(element => {
+                element.innerText = days;
+            });
+            document.querySelectorAll('.hours').forEach(element => {
+                element.innerText = hours;
+            });
+            document.querySelectorAll('.minutes').forEach(element => {
+                element.innerText = minutes;
+            });
+            document.querySelectorAll('.seconds').forEach(element => {
+                element.innerText = seconds;
+            });
+
+            // Se o countdown terminar
+            if (difference < 0) {
+                clearInterval(interval);
+                document.querySelectorAll('.days, .hours, .minutes, .seconds').forEach(element => {
+                    element.innerText = 0;
+                });
+            }
+        }
+
+        // Atualiza o countdown a cada segundo
+        const interval = setInterval(updateCountdown, 1000);
+
+    </script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>

@@ -1539,12 +1539,14 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 2px solid #dee2e6;
+  /*border-top: 2px solid #dee2e6;*/
+  border-top: none !important;
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 4px solid #dee2e6;
+  /*border-bottom: 4px solid #dee2e6;*/
+  border-bottom: none !important;
 }
 
 .table tbody + tbody {
@@ -2371,13 +2373,13 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #d1671b;
+  background-color: rgba(84, 121, 79, 0.5);
   border-color: #54794F;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #d1671b;
+  background-color: rgba(84, 121, 79, 0.5);
   border-color: #54794F;
   box-shadow: 0 0 0 0.2rem rgba(232, 142, 77, 0.5);
 }
